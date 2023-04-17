@@ -21,7 +21,7 @@ export const FMopenClose = trigger('FMopenClose', [
       opacity: 0.0,
     })
   ),
-  transition('* => *', [animate('5s ease')]),
+  transition('* => *', [animate('3s ease')]),
 ]);
 
 

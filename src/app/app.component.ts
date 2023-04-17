@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.FMisOpen = true;
-    }, 7000);
+    }, 2000);
   }
 
   rightAnimDone(event: any) {
@@ -24,8 +24,12 @@ export class AppComponent implements OnInit {
 
       setTimeout(() => {
         this.FMisOpen = false;
-        this.EEisOpen = false;
+        
       }, 5000);
+      setTimeout(() => {
+        
+        this.EEisOpen = false;
+      }, 7000);
     }
   }
 }
