@@ -1,19 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
 
+/* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
 
+/* @import '~@angular/material/prebuilt-themes/purple-green.css'; */
 
+/* @import 'app/indigo-pink-custom.css'; */
+
+//@import './custom-theme';
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  align-content: center;
+  background-color: black;
+}
 
 .firstDiv {
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+  align-items: center;
+  opacity: 0;
+
+  border: 2px rgb(0, 255, 251) solid;
+}
+.lorem {
+  color: white;
+  font-size: x-large;
 }
 
-.secondDiv {
-    height: 20vh;
-    background-color: rgb(127, 131, 255);
-    z-index: 3;
+.loremDiv {
+  line-height: 25px;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.menuDiv {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px red solid;
+  color: white;
+}
+
+.messageDiv {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px red solid;
+  width: 1000px; /* Need a specific value to work */
+  height: 50vh;
+  color: white;
+  background-color: transparent;
+  z-index: 7;
+  text-align: center;
+  line-height: 150px;
+  opacity: 0;
+}
+
+.topDiv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 10vh;
+  width: 100vw;
+
+  background-color: rgb(0, 0, 0);
+  z-index: 3;
+
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.WTPar {
+  color: white;
+  font-size: x-large;
+}
+
+.YTPar {
+  color: yellow;
+  font-size: 128px;
+}

@@ -1,6 +1,43 @@
 
 
 
-<div class="firstDiv">
+<div class="topDiv" [@FMopenClose]="EEisOpen ? 'closed' : 'open'">
+  <div class="menuDiv" >Vanta<b>Black</b></div>
+ 
+ <div class="menuDiv" >
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+  <mat-icon >menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Redial</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voice mail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+</div>
+
+</div>
+ <div class="messageDiv" [@FMopenClose]="FMisOpen ? 'open' : 'closed'"
+ (@FMopenClose.start)="rightAnimDone($event)"
+ >
+  <p class="WTPar">Freelance</p>
+  <p class="YTPar">Graphiste</p>
+  <p class="YTPar">Web designer</p>
+  <div class="loremDiv">
+  <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi aliquid quo illum ex quisquam facilis, mollitia assumenda optio rerum? Expedita tenetur amet laboriosam delectus repellat ullam quisquam rem maiores.</p>
+  </div>
+  
+</div>
+
+<div class="firstDiv" [@FMopenClose]="EEisOpen ? 'closed' : 'open'">
+ 
   <app-one-step-down  />
 </div>
